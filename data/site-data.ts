@@ -293,10 +293,9 @@ export const caseStudies = [
       { period: "حملة C", spend: 7792.94, conversions: 2563 },
       { period: "حملة D", spend: 19328.9, conversions: 2553 },
       { period: "حملة E", spend: 6697.58, conversions: 3253 },
-    ],
-  },
-  },
-];];
+      ],
+},
+];
 
 // -------------------------------------------------------------------
 // CREATIVE SHOWCASE — أضف صورك الفعلية في /public/creatives
