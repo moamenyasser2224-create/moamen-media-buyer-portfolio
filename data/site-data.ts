@@ -8,7 +8,6 @@ export const profile = {
   name: "Moamen Yasser",
   title: "Media Buyer & Performance Marketer",
   location: "[ADD YOUR DATA — المدينة / الدولة]",
-  // WHAT I DO + HOW I CREATE VALUE + WHY I'M DIFFERENT — في جملة واحدة قوية
   headline: "أحوّل الصرف الإعلاني إلى إيراد قابل للقياس.",
   subHeadline:
     "Media Buyer أدير حملات Meta وTikTok من الصفر حتى الـ Scaling، وأربط كل جنيه إعلاني برقم مبيعات حقيقي — مش تقارير مدير الإعلانات بس.",
@@ -23,15 +22,15 @@ export const profile = {
 };
 
 // -------------------------------------------------------------------
-// HERO METRICS — 3 أرقام فقط، الأقوى من بين كل البيانات المتاحة.
-// كل رقم مرتبط بسياقه (Context) — لا نعرض رقمًا بدون مصدر.
+// HERO METRICS
 // -------------------------------------------------------------------
+
 export const heroMetrics = [
   {
     value: "785K+",
     unit: "EGP",
     label: "Revenue Managed",
-    context: "متجر E-commerge واحد — من لوحة Easy Orders",
+    context: "متجر E-commerce واحد — من لوحة Easy Orders",
   },
   {
     value: "685K+",
@@ -48,9 +47,9 @@ export const heroMetrics = [
 ];
 
 // -------------------------------------------------------------------
-// KEY METRICS — METRICS AUDIT
-// كل Metric له: Source / Period / Platform. أي حقل غير مؤكد = [ADD VERIFIED CONTEXT]
+// KEY METRICS
 // -------------------------------------------------------------------
+
 export const keyMetrics = [
   {
     label: "إجمالي المبيعات المُدارة (متجر واحد)",
@@ -103,8 +102,9 @@ export const keyMetrics = [
 ];
 
 // -------------------------------------------------------------------
-// WHY WORK WITH ME — Trust Section
+// WHY WORK WITH ME
 // -------------------------------------------------------------------
+
 export const whyWorkWithMe = [
   {
     title: "Data-Driven Decisions",
@@ -127,70 +127,172 @@ export const whyWorkWithMe = [
 // -------------------------------------------------------------------
 // PLATFORMS
 // -------------------------------------------------------------------
+
 export const platforms = [
-  { name: "Meta Ads", tag: "Facebook + Instagram" },
-  { name: "TikTok Ads", tag: "In-Feed / Spark Ads" },
-  { name: "Facebook Business Manager", tag: "Accounts & Assets" },
-  { name: "Pixel & CAPI", tag: "Server-Side Tracking" },
-  { name: "Easy Orders / E-commerce Dashboards", tag: "Sales Tracking" },
-  { name: "Google Analytics / GA4", tag: "[ADD YOUR DATA]" },
+  {
+    name: "Meta Ads",
+    tag: "Facebook + Instagram",
+  },
+  {
+    name: "TikTok Ads",
+    tag: "In-Feed / Spark Ads",
+  },
+  {
+    name: "Facebook Business Manager",
+    tag: "Accounts & Assets",
+  },
+  {
+    name: "Pixel & CAPI",
+    tag: "Server-Side Tracking",
+  },
+  {
+    name: "Easy Orders / E-commerce Dashboards",
+    tag: "Sales Tracking",
+  },
+  {
+    name: "Google Analytics / GA4",
+    tag: "[ADD YOUR DATA]",
+  },
 ];
 
 // -------------------------------------------------------------------
 // SERVICES
 // -------------------------------------------------------------------
+
 export const services = [
-  { title: "Meta Ads Management", desc: "بناء، إطلاق، وإدارة حملات Facebook & Instagram Ads بالكامل من الصفر حتى التوسّع." },
-  { title: "TikTok Ads Management", desc: "إدارة حملات TikTok Ads وLead Generation Campaigns مع تحسين مستمر لتكلفة التحويل." },
-  { title: "Campaign Strategy", desc: "بناء استراتيجية إعلانية كاملة تربط الميزانية بالهدف التجاري الفعلي للعميل." },
-  { title: "Creative Testing", desc: "اختبار Hooks وزوايا إعلانية وCreatives متعددة لتحديد الأفضل أداءً قبل الـ Scaling." },
-  { title: "Campaign Optimization", desc: "مراجعة يومية لمؤشرات الأداء (CTR, CPC, CPM, ROAS) وتعديل الاستهداف والميزانيات بناءً عليها." },
-  { title: "Scaling", desc: "توسيع الحملات الرابحة بأمان دون فقدان الاستقرار في تكلفة النتيجة." },
-  { title: "Conversion Tracking / Pixel / CAPI", desc: "إعداد وتنظيف تتبع التحويلات (Pixel + Conversions API) لضمان دقة القياس." },
-  { title: "Reporting & Analytics", desc: "تقارير أداء واضحة تربط الصرف الإعلاني بالإيراد الفعلي وصافي الربح." },
+  {
+    title: "Meta Ads Management",
+    desc: "بناء، إطلاق، وإدارة حملات Facebook & Instagram Ads بالكامل من الصفر حتى التوسّع.",
+  },
+  {
+    title: "TikTok Ads Management",
+    desc: "إدارة حملات TikTok Ads وLead Generation Campaigns مع تحسين مستمر لتكلفة التحويل.",
+  },
+  {
+    title: "Campaign Strategy",
+    desc: "بناء استراتيجية إعلانية كاملة تربط الميزانية بالهدف التجاري الفعلي للعميل.",
+  },
+  {
+    title: "Creative Testing",
+    desc: "اختبار Hooks وزوايا إعلانية وCreatives متعددة لتحديد الأفضل أداءً قبل الـ Scaling.",
+  },
+  {
+    title: "Campaign Optimization",
+    desc: "مراجعة يومية لمؤشرات الأداء (CTR, CPC, CPM, ROAS) وتعديل الاستهداف والميزانيات بناءً عليها.",
+  },
+  {
+    title: "Scaling",
+    desc: "توسيع الحملات الرابحة بأمان دون فقدان الاستقرار في تكلفة النتيجة.",
+  },
+  {
+    title: "Conversion Tracking / Pixel / CAPI",
+    desc: "إعداد وتنظيف تتبع التحويلات (Pixel + Conversions API) لضمان دقة القياس.",
+  },
+  {
+    title: "Reporting & Analytics",
+    desc: "تقارير أداء واضحة تربط الصرف الإعلاني بالإيراد الفعلي وصافي الربح.",
+  },
 ];
 
 // -------------------------------------------------------------------
 // SKILLS
 // -------------------------------------------------------------------
+
 export const skills = {
-  "Media Buying": ["Meta Ads", "TikTok Ads", "Facebook Business Manager", "Google Ads [ADD YOUR DATA]"],
-  Analytics: ["Pixel", "Conversions API (CAPI)", "GA4 [ADD YOUR DATA]", "Google Tag Manager [ADD YOUR DATA]"],
-  Strategy: ["Creative Strategy", "Audience Research", "Retargeting", "Funnel Strategy", "Scaling"],
-  Tools: ["Meta Ads Manager", "TikTok Ads Manager", "Easy Orders", "Excel / Google Sheets"],
+  "Media Buying": [
+    "Meta Ads",
+    "TikTok Ads",
+    "Facebook Business Manager",
+    "Google Ads [ADD YOUR DATA]",
+  ],
+  Analytics: [
+    "Pixel",
+    "Conversions API (CAPI)",
+    "GA4 [ADD YOUR DATA]",
+    "Google Tag Manager [ADD YOUR DATA]",
+  ],
+  Strategy: [
+    "Creative Strategy",
+    "Audience Research",
+    "Retargeting",
+    "Funnel Strategy",
+    "Scaling",
+  ],
+  Tools: [
+    "Meta Ads Manager",
+    "TikTok Ads Manager",
+    "Easy Orders",
+    "Excel / Google Sheets",
+  ],
 };
 
 // -------------------------------------------------------------------
 // PROCESS
 // -------------------------------------------------------------------
+
 export const process = [
-  { step: "01", title: "Research", desc: "دراسة المنتج، السوق، والمنافسين قبل أي إطلاق." },
-  { step: "02", title: "Strategy", desc: "بناء خطة إعلانية كاملة تربط الميزانية بالهدف." },
-  { step: "03", title: "Tracking Setup", desc: "إعداد Pixel وCAPI والتأكد من دقة الأحداث." },
-  { step: "04", title: "Launch", desc: "إطلاق الحملات بهيكلة نظيفة وقابلة للقياس." },
-  { step: "05", title: "Creative Testing", desc: "اختبار Hooks وCreatives متعددة." },
-  { step: "06", title: "Optimization", desc: "متابعة يومية وتحسين الاستهداف والميزانية." },
-  { step: "07", title: "Scaling", desc: "توسيع الحملات الرابحة بثبات." },
-  { step: "08", title: "Reporting", desc: "تقرير أداء واضح ومربوط بالنتيجة التجارية." },
+  {
+    step: "01",
+    title: "Research",
+    desc: "دراسة المنتج، السوق، والمنافسين قبل أي إطلاق.",
+  },
+  {
+    step: "02",
+    title: "Strategy",
+    desc: "بناء خطة إعلانية كاملة تربط الميزانية بالهدف.",
+  },
+  {
+    step: "03",
+    title: "Tracking Setup",
+    desc: "إعداد Pixel وCAPI والتأكد من دقة الأحداث.",
+  },
+  {
+    step: "04",
+    title: "Launch",
+    desc: "إطلاق الحملات بهيكلة نظيفة وقابلة للقياس.",
+  },
+  {
+    step: "05",
+    title: "Creative Testing",
+    desc: "اختبار Hooks وCreatives متعددة.",
+  },
+  {
+    step: "06",
+    title: "Optimization",
+    desc: "متابعة يومية وتحسين الاستهداف والميزانية.",
+  },
+  {
+    step: "07",
+    title: "Scaling",
+    desc: "توسيع الحملات الرابحة بثبات.",
+  },
+  {
+    step: "08",
+    title: "Reporting",
+    desc: "تقرير أداء واضح ومربوط بالنتيجة التجارية.",
+  },
 ];
 
 // -------------------------------------------------------------------
 // EXPERIENCE
 // -------------------------------------------------------------------
+
 export const experience = [
   {
     company: "[ADD YOUR DATA — اسم الشركة / العميل]",
     position: "[ADD YOUR DATA — المسمى الوظيفي]",
     duration: "[ADD YOUR DATA — المدة]",
-    points: ["[ADD YOUR DATA — مسؤولية أو إنجاز رئيسي]", "[ADD YOUR DATA — نتيجة قابلة للقياس]"],
+    points: [
+      "[ADD YOUR DATA — مسؤولية أو إنجاز رئيسي]",
+      "[ADD YOUR DATA — نتيجة قابلة للقياس]",
+    ],
   },
 ];
 
 // -------------------------------------------------------------------
-// CASE STUDIES — PREMIUM INTERACTIVE STRUCTURE (11 numbered sections)
-// كل حقل مبني على بيانات حقيقية من لقطات الشاشة المرفوعة، أو معلّم بوضوح
-// كـ [ADD YOUR DATA] / [ADD VERIFIED DATA] حيث لا تتوفر بيانات مؤكدة.
+// CASE STUDIES
 // -------------------------------------------------------------------
+
 export const caseStudies = [
   {
     id: "ecommerce-store-01",
@@ -198,24 +300,39 @@ export const caseStudies = [
     client: "[ADD YOUR DATA — اسم العميل]",
     industry: "E-commerce / Health & Wellness",
     duration: "[ADD VERIFIED DATA — مدة إدارة الحساب]",
+
     sections: {
       overview:
         "إدارة كاملة لحملات Meta Ads لمتجر إلكتروني متخصص في منتجات التخسيس والمكملات، مع ربط مباشر بلوحة المبيعات (Easy Orders) لقياس النتيجة الفعلية على العميل.",
+
       challenge:
         "المتجر كان يعاني من معدل مفقودة مرتفع (Missed Rate) وتكلفة طلب غير مستقرة عبر الفترات المختلفة.",
+
       objective:
         "زيادة المبيعات وصافي الربح عبر حملات Meta Ads مع الحفاظ على معدل تحويل صحي ومعدل مفقودة منخفض.",
+
       strategy:
         "إعادة هيكلة الحملات، تقسيم الميزانية بين حملات Conversion وRetargeting، ومتابعة يومية لسعر الطلب.",
-      campaignStructure: "[ADD YOUR DATA — تفصيل هيكل الحملات: عدد الحملات، الأهداف، توزيع الميزانية]",
-      targeting: "[ADD YOUR DATA — تفاصيل الجمهور المستهدف والـ Lookalikes]",
-      creativeStrategy: "[ADD YOUR DATA — تفاصيل استراتيجية الكرياتيف والـ Hooks المستخدمة]",
-      testing: "[ADD YOUR DATA — ماذا تم اختباره تحديدًا: جماهير / كرياتيف / زوايا]",
+
+      campaignStructure:
+        "[ADD YOUR DATA — تفصيل هيكل الحملات: عدد الحملات، الأهداف، توزيع الميزانية]",
+
+      targeting:
+        "[ADD YOUR DATA — تفاصيل الجمهور المستهدف والـ Lookalikes]",
+
+      creativeStrategy:
+        "[ADD YOUR DATA — تفاصيل استراتيجية الكرياتيف والـ Hooks المستخدمة]",
+
+      testing:
+        "[ADD YOUR DATA — ماذا تم اختباره تحديدًا: جماهير / كرياتيف / زوايا]",
+
       optimization:
         "تحسين مستمر بناءً على متوسط سعر الطلب، معدل التحويل، ومعدل الطلبات المفقودة أسبوعيًا.",
+
       results:
         "نمو تصاعدي في المبيعات وصافي الربح عبر أربع فترات متتالية، مع تحسن ملحوظ في معدل التحويل.",
     },
+
     metrics: {
       spend: "[ADD VERIFIED DATA]",
       revenue: "785.57K EGP",
@@ -228,43 +345,98 @@ export const caseStudies = [
       roas: "[ADD VERIFIED DATA]",
       cpa: "[ADD VERIFIED DATA]",
     },
-    beforeAfter: null, // لا توجد بيانات Before/After مؤكدة — لن يتم عرض القسم
+
+    beforeAfter: null,
+
     proofOfWork: [
-      { type: "E-commerce Dashboard", label: "أضف Screenshot حقيقية من لوحة Easy Orders", image: null, available: false },
-      { type: "Meta Ads Screenshot", label: "[ADD META ADS SCREENSHOT]", image: null, available: false },
-      { type: "Creative Screenshot", label: "[ADD CREATIVE SCREENSHOT]", image: null, available: false },
+      {
+        type: "E-commerce Dashboard",
+        label: "أضف Screenshot حقيقية من لوحة Easy Orders",
+        image: null,
+        available: false,
+      },
+      {
+        type: "Meta Ads Screenshot",
+        label: "[ADD META ADS SCREENSHOT]",
+        image: null,
+        available: false,
+      },
+      {
+        type: "Creative Screenshot",
+        label: "[ADD CREATIVE SCREENSHOT]",
+        image: null,
+        available: false,
+      },
     ],
+
     learnings: [
       "متابعة معدل الطلبات المفقودة أسبوعيًا كانت مفتاح رفع صافي الربح.",
       "الربط المباشر بين لوحة الإعلانات ولوحة المبيعات ضروري لقياس ROAS حقيقي وليس تقديري.",
     ],
+
     chartData: [
-      { period: "فترة 1", revenue: 202.38, profit: 201.58 },
-      { period: "فترة 2", revenue: 268.82, profit: 268.62 },
-      { period: "فترة 3", revenue: 475.29, profit: 472.58 },
-      { period: "فترة 4", revenue: 785.57, profit: 685.49 },
+      {
+        period: "فترة 1",
+        revenue: 202.38,
+        profit: 201.58,
+      },
+      {
+        period: "فترة 2",
+        revenue: 268.82,
+        profit: 268.62,
+      },
+      {
+        period: "فترة 3",
+        revenue: 475.29,
+        profit: 472.58,
+      },
+      {
+        period: "فترة 4",
+        revenue: 785.57,
+        profit: 685.49,
+      },
     ],
   },
+
   {
     id: "tiktok-lead-gen-01",
     title: "حملات TikTok Ads — Lead Generation متعددة الحسابات",
     client: "[ADD YOUR DATA — اسم العميل]",
     industry: "Lead Generation / E-commerce",
     duration: "2025-12-10 → 2026-02-24",
+
     sections: {
-      overview: "إدارة متوازية لعشر حملات TikTok Ads نشطة داخل نفس الحساب الإعلاني، بهدف خفض تكلفة التحويل الإجمالية.",
+      overview:
+        "إدارة متوازية لعشر حملات TikTok Ads نشطة داخل نفس الحساب الإعلاني، بهدف خفض تكلفة التحويل الإجمالية.",
+
       challenge:
         "تفاوت كبير في تكلفة التحويل بين الحملات (من نحو 2 EGP وحتى أكثر من 13 EGP) داخل نفس الحساب.",
-      objective: "خفض تكلفة التحويل (Cost per Conversion) عبر عدة حملات TikTok نشطة في وقت واحد.",
+
+      objective:
+        "خفض تكلفة التحويل (Cost per Conversion) عبر عدة حملات TikTok نشطة في وقت واحد.",
+
       strategy:
         "إعادة توزيع الميزانية نحو الحملات الأفضل أداءً، وإيقاف أو تعديل الحملات ذات CTR منخفض ونسب استحواذ عالية.",
-      campaignStructure: "10 حملات فعّالة بالتوازي — أهداف Lead Generation، ميزانية موزعة حسب أداء كل حملة.",
-      targeting: "[ADD YOUR DATA — تفاصيل الجمهور المستهدف لكل حملة]",
-      creativeStrategy: "[ADD YOUR DATA — تفاصيل الكرياتيف المستخدم في كل حملة]",
-      testing: "اختبار مستمر بين الحملات نفسها كوحدات مقارنة (A/B على مستوى الحملة) بناءً على تكلفة التحويل.",
-      optimization: "تحليل أسبوعي لكل حملة على حدة، وتوجيه الميزانية تدريجيًا نحو الحملات ذات أقل تكلفة تحويل.",
-      results: "متوسط تكلفة تحويل 4.85 EGP عبر الحساب بالكامل، مع بعض الحملات دون نصف هذا المتوسط.",
+
+      campaignStructure:
+        "10 حملات فعّالة بالتوازي — أهداف Lead Generation، ميزانية موزعة حسب أداء كل حملة.",
+
+      targeting:
+        "[ADD YOUR DATA — تفاصيل الجمهور المستهدف لكل حملة]",
+
+      creativeStrategy:
+        "[ADD YOUR DATA — تفاصيل الكرياتيف المستخدم في كل حملة]",
+
+      testing:
+        "اختبار مستمر بين الحملات نفسها كوحدات مقارنة (A/B على مستوى الحملة) بناءً على تكلفة التحويل.",
+
+      optimization:
+        "تحليل أسبوعي لكل حملة على حدة، وتوجيه الميزانية تدريجيًا نحو الحملات ذات أقل تكلفة تحويل.",
+
+      results:
+        "متوسط تكلفة تحويل 4.85 EGP عبر الحساب بالكامل، مع بعض الحملات دون نصف هذا المتوسط.",
     },
+
     metrics: {
       spend: "53,174.35 EGP",
       revenue: "[ADD VERIFIED DATA]",
@@ -278,29 +450,78 @@ export const caseStudies = [
       cpa: "4.85 EGP",
       roas: "[ADD VERIFIED DATA]",
     },
+
     beforeAfter: null,
+
     proofOfWork: [
-      { type: "TikTok Ads Screenshot", label: "أضف Screenshot حقيقية من TikTok Ads Manager", image: null, available: false },
-      { type: "Campaign Screenshot", label: "[ADD CAMPAIGN BREAKDOWN SCREENSHOT]", image: null, available: false },
+      {
+        type: "TikTok Ads Screenshot",
+        label: "أضف Screenshot حقيقية من TikTok Ads Manager",
+        image: null,
+        available: false,
+      },
+      {
+        type: "Campaign Screenshot",
+        label: "[ADD CAMPAIGN BREAKDOWN SCREENSHOT]",
+        image: null,
+        available: false,
+      },
     ],
+
     learnings: [
       "إدارة عدة حملات بالتوازي تتطلب لوحة متابعة يومية لتفادي تسرب الميزانية على حملات ضعيفة.",
       "الحملات ذات الأداء الأفضل استحوذت على غالبية التحويلات بتكلفة أقل من نصف متوسط الحساب.",
     ],
+
     chartData: [
-      { period: "حملة A", spend: 6693.09, conversions: 728 },
-      { period: "حملة B", spend: 5857.66, conversions: 1341 },
-      { period: "حملة C", spend: 7792.94, conversions: 2563 },
-      { period: "حملة D", spend: 19328.9, conversions: 2553 },
-      { period: "حملة E", spend: 6697.58, conversions: 3253 },
-      ],
-},
+      {
+        period: "حملة A",
+        spend: 6693.09,
+        conversions: 728,
+      },
+      {
+        period: "حملة B",
+        spend: 5857.66,
+        conversions: 1341,
+      },
+      {
+        period: "حملة C",
+        spend: 7792.94,
+        conversions: 2563,
+      },
+      {
+        period: "حملة D",
+        spend: 19328.9,
+        conversions: 2553,
+      },
+      {
+        period: "حملة E",
+        spend: 6697.58,
+        conversions: 3253,
+      },
+    ],
+  },
 ];
 
 // -------------------------------------------------------------------
-// CREATIVE SHOWCASE — أضف صورك الفعلية في /public/creatives
+// CREATIVE SHOWCASE
+// مهم:
+// image يجب أن تكون string أو null.
+// هذا يمنع TypeScript من استنتاج never عند استخدام startsWith.
 // -------------------------------------------------------------------
-export const creatives = [
+
+export interface Creative {
+  title: string;
+  platform: string;
+  type: string;
+  hook: string;
+  angle: string;
+  objective: string;
+  result: string;
+  image: string | null;
+}
+
+export const creatives: Creative[] = [
   {
     title: "Meta Ads — Creative Strategy Slot",
     platform: "Meta Ads",
@@ -324,29 +545,45 @@ export const creatives = [
 ];
 
 // -------------------------------------------------------------------
-// CREATIVE TESTING — HOW I TEST CREATIVES
-// مقارنة حقيقية على مستوى الحملة (وليست Hook مزيّف) مبنية على بيانات
-// TikTok Ads الفعلية. لتفاصيل Hook/Angle الدقيقة أضف بياناتك.
+// CREATIVE TESTING
 // -------------------------------------------------------------------
+
 export const creativeTesting = {
   intro:
     "بدل اختراع مثال، إليك مقارنة حقيقية من حساب TikTok Ads فعلي: حملتان بنفس الهدف، بميزانية مختلفة، بفارق تكلفة تحويل واضح — وهذا أساس قرار توزيع الميزانية.",
+
   comparisons: [
     {
       labelA: "حملة A — Lead Generation",
       labelB: "حملة B — Lead Generation",
-      metricsA: { spend: "5,857.66 EGP", ctr: "0.93%", cpa: "4.37 EGP", conversions: "1,341" },
-      metricsB: { spend: "19,328.90 EGP", ctr: "0.73%", cpa: "7.57 EGP", conversions: "2,553" },
+
+      metricsA: {
+        spend: "5,857.66 EGP",
+        ctr: "0.93%",
+        cpa: "4.37 EGP",
+        conversions: "1,341",
+      },
+
+      metricsB: {
+        spend: "19,328.90 EGP",
+        ctr: "0.73%",
+        cpa: "7.57 EGP",
+        conversions: "2,553",
+      },
+
       decision:
         "الحملة A كانت أكفأ من حيث تكلفة التحويل رغم ميزانية أقل بكثير — تم توجيه ميزانية إضافية نحوها بدل التوسّع العشوائي في الحملة B.",
     },
   ],
-  note: "تفاصيل الـ Hook والزاوية الإعلانية الدقيقة لكل تصميم بانتظار بياناتك — [ADD YOUR DATA]",
+
+  note:
+    "تفاصيل الـ Hook والزاوية الإعلانية الدقيقة لكل تصميم بانتظار بياناتك — [ADD YOUR DATA]",
 };
 
 // -------------------------------------------------------------------
-// TESTIMONIALS — اتركها فارغة إن لم تتوفر شهادات حقيقية
+// TESTIMONIALS
 // -------------------------------------------------------------------
+
 export const testimonials: {
   name: string;
   position: string;
@@ -357,6 +594,11 @@ export const testimonials: {
 // -------------------------------------------------------------------
 // CERTIFICATIONS
 // -------------------------------------------------------------------
+
 export const certifications = [
-  { name: "[ADD YOUR DATA — اسم الشهادة]", issuer: "[ADD YOUR DATA]", year: "[ADD YOUR DATA]" },
+  {
+    name: "[ADD YOUR DATA — اسم الشهادة]",
+    issuer: "[ADD YOUR DATA]",
+    year: "[ADD YOUR DATA]",
+  },
 ];
