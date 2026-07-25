@@ -17,15 +17,9 @@ export default function CreativeShowcase() {
       className="section-pad border-t border-line"
     >
       <div className="container-x">
-        {/* =========================
-            SECTION HEADER
-        ========================== */}
-
         <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
-            <p className="eyebrow">
-              Creative Work
-            </p>
+            <p className="eyebrow">Creative Work</p>
 
             <h2 className="font-display mt-3 max-w-3xl text-3xl font-bold md:text-5xl">
               Creative is not decoration. It&apos;s a testing variable.
@@ -37,35 +31,29 @@ export default function CreativeShowcase() {
           </p>
         </div>
 
-        {/* =========================
-            CREATIVE GRID
-        ========================== */}
-
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {creatives.map((creative, index) => {
+          {creatives.map((c, i) => {
             const imageUrl =
-              typeof creative.image === "string"
-                ? creative.image
+              typeof c.image === "string"
+                ? c.image
                 : "";
 
             const hasRealImage =
-              imageUrl.length > 0 &&
+              imageUrl !== "" &&
               !imageUrl.startsWith("[");
 
             return (
               <button
                 type="button"
-                key={index}
-                onClick={() => setActive(index)}
+                key={i}
+                onClick={() => setActive(i)}
                 className="card group overflow-hidden text-start transition-all hover:-translate-y-1 hover:border-accent/40"
               >
-                {/* IMAGE */}
-
                 <div className="relative flex aspect-[4/5] items-center justify-center overflow-hidden border-b border-line bg-black/40">
                   {hasRealImage ? (
                     <Image
                       src={imageUrl}
-                      alt={creative.title}
+                      alt={String(c.title)}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                       sizes="(max-width: 1024px) 50vw, 33vw"
@@ -73,7 +61,7 @@ export default function CreativeShowcase() {
                   ) : (
                     <div className="p-8 text-center">
                       <span className="text-[10px] uppercase tracking-[0.2em] text-accent">
-                        {creative.type}
+                        {String(c.type)}
                       </span>
 
                       <p className="mt-3 text-xs leading-5 text-muted">
@@ -85,21 +73,19 @@ export default function CreativeShowcase() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
                 </div>
 
-                {/* CARD CONTENT */}
-
                 <div className="p-5">
                   <div className="flex items-center gap-2 text-xs">
                     <span className="text-accent">
-                      {creative.platform}
+                      {String(c.platform)}
                     </span>
 
                     <span className="text-muted">
-                      · {creative.type}
+                      · {String(c.type)}
                     </span>
                   </div>
 
                   <h3 className="font-display mt-2 font-semibold">
-                    {creative.title}
+                    {String(c.title)}
                   </h3>
                 </div>
               </button>
@@ -108,22 +94,12 @@ export default function CreativeShowcase() {
         </div>
       </div>
 
-      {/* =========================
-          CREATIVE MODAL
-      ========================== */}
-
       <AnimatePresence>
         {activeCreative && (
           <motion.div
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
-            exit={{
-              opacity: 0,
-            }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             onClick={() => setActive(null)}
             className="fixed inset-0 z-[100] flex items-center justify-center bg-black/90 p-4 md:p-8"
           >
@@ -140,23 +116,17 @@ export default function CreativeShowcase() {
                 scale: 0.96,
                 opacity: 0,
               }}
-              onClick={(event) =>
-                event.stopPropagation()
-              }
+              onClick={(e) => e.stopPropagation()}
               className="card grid max-h-[90vh] w-full max-w-4xl grid-cols-1 overflow-hidden md:grid-cols-2"
             >
-              {/* MODAL IMAGE */}
-
               <div className="relative flex min-h-[320px] items-center justify-center bg-black/40">
                 {typeof activeCreative.image ===
                   "string" &&
-                activeCreative.image.length > 0 &&
-                !activeCreative.image.startsWith(
-                  "["
-                ) ? (
+                activeCreative.image !== "" &&
+                !activeCreative.image.startsWith("[") ? (
                   <Image
                     src={activeCreative.image}
-                    alt={activeCreative.title}
+                    alt={String(activeCreative.title)}
                     fill
                     className="object-contain"
                     sizes="50vw"
@@ -164,7 +134,7 @@ export default function CreativeShowcase() {
                 ) : (
                   <div className="p-8 text-center">
                     <span className="text-[10px] uppercase tracking-[0.2em] text-accent">
-                      {activeCreative.type}
+                      {String(activeCreative.type)}
                     </span>
 
                     <p className="mt-3 text-sm text-muted">
@@ -174,39 +144,35 @@ export default function CreativeShowcase() {
                 )}
               </div>
 
-              {/* MODAL DETAILS */}
-
               <div className="overflow-y-auto p-7">
                 <span className="text-xs text-accent">
-                  {activeCreative.platform} ·{" "}
-                  {activeCreative.type}
+                  {String(activeCreative.platform)} ·{" "}
+                  {String(activeCreative.type)}
                 </span>
 
                 <h3 className="font-display mt-2 text-2xl font-bold">
-                  {activeCreative.title}
+                  {String(activeCreative.title)}
                 </h3>
 
                 <div className="mt-7 space-y-5 text-sm">
                   <Detail
                     label="Hook"
-                    value={activeCreative.hook}
+                    value={String(activeCreative.hook ?? "")}
                   />
 
                   <Detail
                     label="Angle"
-                    value={activeCreative.angle}
+                    value={String(activeCreative.angle ?? "")}
                   />
 
                   <Detail
                     label="Objective"
-                    value={
-                      activeCreative.objective
-                    }
+                    value={String(activeCreative.objective ?? "")}
                   />
 
                   <Detail
                     label="Result"
-                    value={activeCreative.result}
+                    value={String(activeCreative.result ?? "")}
                   />
                 </div>
 
@@ -225,10 +191,6 @@ export default function CreativeShowcase() {
     </section>
   );
 }
-
-/* =========================
-   DETAIL COMPONENT
-========================== */
 
 function Detail({
   label,
