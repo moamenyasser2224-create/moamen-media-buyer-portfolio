@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Segoe UI", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Segoe UI", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
+}
+
+/*
+  NOTE: This project is set up to work fully offline (no Google Fonts fetch
+  at build time). If your deployment environment has internet access, you
+  can switch back to next/font/google (Inter + Space Grotesk) in
+  app/layout.tsx for a more distinctive typeface — see README.md.
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0b;
+  color: #f3f3f4;
+}
+
+.container-x {
+  @apply mx-auto w-full max-w-7xl px-6 md:px-10;
+}
+
+.section-pad {
+  @apply py-20 md:py-28;
+}
+
+.eyebrow {
+  @apply text-xs md:text-sm tracking-[0.25em] uppercase text-accent font-semibold;
+}
+
+.card {
+  @apply rounded-2xl border border-line bg-panel/60 backdrop-blur-sm;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-[1.03] active:scale-[0.98];
+}
+
+.btn-secondary {
+  @apply inline-flex items-center gap-2 rounded-full border border-line px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-accent hover:text-accent;
+}
+
+.bg-noise {
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.06) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0b;
+}
+::-webkit-scrollbar-thumb {
+  background: #232327;
+  border-radius: 999px;
+}
