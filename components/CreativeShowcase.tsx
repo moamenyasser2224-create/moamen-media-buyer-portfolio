@@ -9,7 +9,9 @@ export default function CreativeShowcase() {
   const [active, setActive] = useState<number | null>(null);
 
   const activeCreative =
-    active !== null ? creatives[active] : null;
+    active !== null && creatives[active]
+      ? creatives[active]
+      : null;
 
   return (
     <section
@@ -33,14 +35,16 @@ export default function CreativeShowcase() {
 
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {creatives.map((c, i) => {
+            // نحول الصورة إلى String بشكل آمن
             const imageUrl =
               typeof c.image === "string"
                 ? c.image
                 : "";
 
+            // لا نستخدم startsWith نهائيًا
             const hasRealImage =
-              imageUrl !== "" &&
-              !imageUrl.startsWith("[");
+              imageUrl.length > 0 &&
+              imageUrl.charAt(0) !== "[";
 
             return (
               <button
@@ -120,10 +124,9 @@ export default function CreativeShowcase() {
               className="card grid max-h-[90vh] w-full max-w-4xl grid-cols-1 overflow-hidden md:grid-cols-2"
             >
               <div className="relative flex min-h-[320px] items-center justify-center bg-black/40">
-                {typeof activeCreative.image ===
-                  "string" &&
-                activeCreative.image !== "" &&
-                !activeCreative.image.startsWith("[") ? (
+                {typeof activeCreative.image === "string" &&
+                activeCreative.image.length > 0 &&
+                activeCreative.image.charAt(0) !== "[" ? (
                   <Image
                     src={activeCreative.image}
                     alt={String(activeCreative.title)}
